@@ -25,7 +25,7 @@ Before diving into ReactJS development, it's essential to establish a solid unde
 
 Our exploration of ReactJS encompasses a wide range of topics, including:
 
-1. Setting up a ReactJS development environment
+1. [Setting up a ReactJS development environment](setup.md)
 2. Understanding ReactJS components and JSX
 3. Managing state and props in ReactJS applications
 4. Handling user input and form submission in ReactJS
