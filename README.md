@@ -31,7 +31,7 @@ Our exploration of ReactJS encompasses a wide range of topics, including:
 4. [Handling user input and form submission in ReactJS](handleform.md)
 5. [Implementing routing using React Router](routing.md)
 6. [Exploring the power of React Hooks](hooks.md)
-7. Making HTTP requests with Axios or Fetch in ReactJS
+7. [Making HTTP requests with Axios or Fetch in ReactJS](handleapi.md)
 8. State management with Redux or Context API
 9. Testing ReactJS components using Jest and Enzyme
 10. Deploying ReactJS applications to production environments
