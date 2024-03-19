@@ -33,7 +33,7 @@ Our exploration of ReactJS encompasses a wide range of topics, including:
 6. [Exploring the power of React Hooks](hooks.md)
 7. [Making HTTP requests with Axios or Fetch in ReactJS](handleapi.md)
 8. [State management with Redux or Context API](state-management.md)
-9. Testing ReactJS components using Jest and Enzyme
+9. [Testing ReactJS components using Jest and Enzyme](testing.md)
 10. Deploying ReactJS applications to production environments
 
 ## How to Navigate This Comprehensive Guide
