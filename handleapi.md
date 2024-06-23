@@ -27,16 +27,17 @@ yarn add axios
 To make a GET request using Axios in a React component, you can use the following syntax:
 
 ```javascript
-import axios from 'axios';
+import axios from "axios";
 
-axios.get('https://api.example.com/data')
-  .then(response => {
+axios
+  .get("https://api.example.com/data")
+  .then((response) => {
     // Handle successful response
     console.log(response.data);
   })
-  .catch(error => {
+  .catch((error) => {
     // Handle error
-    console.error('Error fetching data: ', error);
+    console.error("Error fetching data: ", error);
   });
 ```
 
@@ -45,16 +46,17 @@ axios.get('https://api.example.com/data')
 For making POST requests with Axios, you can use the `axios.post()` method:
 
 ```javascript
-axios.post('https://api.example.com/data', {
+axios
+  .post("https://api.example.com/data", {
     // Request data
   })
-  .then(response => {
+  .then((response) => {
     // Handle successful response
     console.log(response.data);
   })
-  .catch(error => {
+  .catch((error) => {
     // Handle error
-    console.error('Error posting data: ', error);
+    console.error("Error posting data: ", error);
   });
 ```
 
@@ -67,15 +69,15 @@ Fetch is a built-in JavaScript API for making HTTP requests. It provides a moder
 To make a GET request using Fetch in ReactJS, you can use the following syntax:
 
 ```javascript
-fetch('https://api.example.com/data')
-  .then(response => response.json())
-  .then(data => {
+fetch("https://api.example.com/data")
+  .then((response) => response.json())
+  .then((data) => {
     // Handle response data
     console.log(data);
   })
-  .catch(error => {
+  .catch((error) => {
     // Handle error
-    console.error('Error fetching data: ', error);
+    console.error("Error fetching data: ", error);
   });
 ```
 
@@ -84,29 +86,30 @@ fetch('https://api.example.com/data')
 For making POST requests with Fetch, you can use the `fetch()` method with additional options:
 
 ```javascript
-fetch('https://api.example.com/data', {
-    method: 'POST',
-    body: JSON.stringify({
-      // Request data
-    }),
-    headers: {
-      'Content-Type': 'application/json'
-    }
-  })
-  .then(response => response.json())
-  .then(data => {
+fetch("https://api.example.com/data", {
+  method: "POST",
+  body: JSON.stringify({
+    // Request data
+  }),
+  headers: {
+    "Content-Type": "application/json",
+  },
+})
+  .then((response) => response.json())
+  .then((data) => {
     // Handle response data
     console.log(data);
   })
-  .catch(error => {
+  .catch((error) => {
     // Handle error
-    console.error('Error posting data: ', error);
+    console.error("Error posting data: ", error);
   });
 ```
 
 ## Choosing Between Axios and Fetch
 
 - **Axios Pros:**
+
   - Convenient syntax and error handling.
   - Supports request and response interceptors.
   - Works seamlessly with JSON data.
@@ -123,12 +126,10 @@ Both Axios and Fetch provide powerful mechanisms for making HTTP requests in Rea
 
 In the next section, we will delve into advanced topics like state management with Redux or the Context API. Stay tuned for more insights into mastering ReactJS for frontend development!
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)

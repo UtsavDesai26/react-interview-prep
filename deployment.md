@@ -149,19 +149,17 @@ Set up continuous deployment to automatically deploy changes whenever you push n
 - **Vercel**: Enable Git integration to enable automatic deployments.
 - **Firebase Hosting**: Utilize Firebase Hosting CLI or Firebase GitHub Actions for continuous deployment.
 - **AWS Amplify**: Configure automatic deployment triggers using AWS Amplify Console. Link your Git repository and specify the branch to monitor for changes. Amplify will automatically build and deploy your application whenever changes are pushed to the specified branch.
-- **Heroku**: Utilize Heroku's GitHub integration or connect your preferred version control system. Configure automatic deployments by linking a specific branch to your Heroku app. Heroku will deploy your application whenever changes are pushed to the linked branch.  
+- **Heroku**: Utilize Heroku's GitHub integration or connect your preferred version control system. Configure automatic deployments by linking a specific branch to your Heroku app. Heroku will deploy your application whenever changes are pushed to the linked branch.
 - **GitHub Pages**: Leverage GitHub Actions to automate the deployment process. Create a workflow that triggers deployment on every push to the main branch. GitHub Actions will build and deploy your React application to GitHub Pages seamlessly.
 
 ## Conclusion
 
 Deploying ReactJS applications to production environments is a crucial step in making your application accessible to users worldwide. By following the steps outlined in this guide and utilizing the capabilities of hosting providers, you can deploy your React applications seamlessly and efficiently. Remember to monitor your deployed application regularly and implement any necessary optimizations for optimal performance.
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)

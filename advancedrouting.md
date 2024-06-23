@@ -17,7 +17,7 @@ yarn add react-router-dom
 In your React application, you typically wrap your entire application with the `BrowserRouter` component provided by React Router. This component provides the context for routing throughout your application. Inside the `BrowserRouter`, you define your routes using the `Route` component:
 
 ```javascript
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -36,14 +36,18 @@ function App() {
 Instead of traditional anchor tags (`<a>`), React Router provides the `Link` component to navigate between different routes in your application:
 
 ```javascript
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
     <nav>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
       </ul>
     </nav>
   );
@@ -98,15 +102,24 @@ Example:
 
 ```javascript
 const PrivateRoute = ({ component: Component, isAuthenticated, ...rest }) => (
-  <Route {...rest} render={(props) => (
-    isAuthenticated === true
-      ? <Component {...props} />
-      : <Redirect to='/login' />
-  )} />
+  <Route
+    {...rest}
+    render={(props) =>
+      isAuthenticated === true ? (
+        <Component {...props} />
+      ) : (
+        <Redirect to="/login" />
+      )
+    }
+  />
 );
 
 // Usage
-<PrivateRoute path="/dashboard" component={Dashboard} isAuthenticated={user.isAuthenticated} />
+<PrivateRoute
+  path="/dashboard"
+  component={Dashboard}
+  isAuthenticated={user.isAuthenticated}
+/>;
 ```
 
 ## 2.2 Lazy Loading Routes for Code Splitting
@@ -116,13 +129,16 @@ Lazy loading routes allow you to split your application's code into smaller chun
 Example:
 
 ```javascript
-const LazyComponent = React.lazy(() => import('./LazyComponent'));
+const LazyComponent = React.lazy(() => import("./LazyComponent"));
 
-<Route path="/lazy" render={() => (
-  <Suspense fallback={<div>Loading...</div>}>
-    <LazyComponent />
-  </Suspense>
-)} />
+<Route
+  path="/lazy"
+  render={() => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </Suspense>
+  )}
+/>;
 ```
 
 ## 2.3 Route-Based Code Splitting with React Suspense
@@ -132,13 +148,16 @@ React Suspense enables you to suspend rendering while waiting for data to load, 
 Example:
 
 ```javascript
-const LazyComponent = React.lazy(() => import('./LazyComponent'));
+const LazyComponent = React.lazy(() => import("./LazyComponent"));
 
-<Route path="/lazy" render={() => (
-  <Suspense fallback={<div>Loading...</div>}>
-    <LazyComponent />
-  </Suspense>
-)} />
+<Route
+  path="/lazy"
+  render={() => (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyComponent />
+    </Suspense>
+  )}
+/>;
 ```
 
 ## 2.4 Transition Animations Between Routes
@@ -149,12 +168,7 @@ Example:
 
 ```javascript
 // Using React Transition Group
-<CSSTransition
-  in={true}
-  timeout={300}
-  classNames="fade"
-  unmountOnExit
->
+<CSSTransition in={true} timeout={300} classNames="fade" unmountOnExit>
   <Switch>
     <Route exact path="/" component={Home} />
     <Route path="/about" component={About} />
@@ -171,14 +185,15 @@ Example:
 
 ```javascript
 // Accessing route parameters
-<Route path="/users/:userId" render={({ match }) => (
-  <User userId={match.params.userId} />
-)} />
+<Route
+  path="/users/:userId"
+  render={({ match }) => <User userId={match.params.userId} />}
+/>;
 
 // Accessing query strings
 const search = window.location.search;
 const params = new URLSearchParams(search);
-const paramValue = params.get('paramName');
+const paramValue = params.get("paramName");
 ```
 
 These advanced routing techniques provide powerful capabilities for building dynamic and interactive web applications with React Router. Experiment with these features to create compelling user experiences tailored to your project's requirements.
@@ -192,6 +207,7 @@ Reach Router is a lightweight routing library designed specifically for React ap
 - **Declarative Routing**: Reach Router allows you to define routes using JSX syntax, making it easy to understand and maintain your routing configuration.
 
 Example:
+
 ```jsx
 import { Router, Link } from "@reach/router";
 import Home from "./Home";
@@ -216,6 +232,7 @@ function App() {
 When choosing a routing library for your project, it's essential to consider the specific requirements and use cases. Here's a comparison between React Router and Reach Router:
 
 - **React Router**:
+
   - Feature-rich and mature library with extensive documentation and community support.
   - Provides advanced features such as nested routes, route guards, and code splitting.
   - Offers a comprehensive set of components for building complex routing configurations.
@@ -256,20 +273,19 @@ The history API allows developers to manipulate the browser's history stack, ena
 You can use the `history` object provided by the `react-router-dom` package to perform programmatic navigation. The `history` object allows you to push, replace, or go back/forward in the browser's history stack.
 
 **Example:**
+
 ```javascript
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 function MyComponent() {
   const history = useHistory();
 
   const handleClick = () => {
     // Navigates to a new route programmatically
-    history.push('/new-route');
+    history.push("/new-route");
   };
 
-  return (
-    <button onClick={handleClick}>Go to New Route</button>
-  );
+  return <button onClick={handleClick}>Go to New Route</button>;
 }
 ```
 
@@ -280,9 +296,10 @@ React context provides a way to pass data through the component tree without hav
 By creating a custom router using React context, you can encapsulate routing logic and share it across your application. This allows for more flexibility and customization in how routes are handled.
 
 **Example:**
+
 ```javascript
 // RouterContext.js
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext } from "react";
 
 const RouterContext = createContext();
 
@@ -290,9 +307,7 @@ export const useRouter = () => useContext(RouterContext);
 
 export const RouterProvider = ({ children, history }) => {
   return (
-    <RouterContext.Provider value={history}>
-      {children}
-    </RouterContext.Provider>
+    <RouterContext.Provider value={history}>{children}</RouterContext.Provider>
   );
 };
 ```
@@ -304,6 +319,7 @@ Deep linking allows users to navigate directly to a specific page within your ap
 To handle deep linking, you need to ensure that your application's routes match the expected URLs and manage the browser's history stack appropriately. This ensures that users can navigate to specific pages via URLs or back/forward buttons.
 
 **Example:**
+
 ```javascript
 // Ensure your application's routes are configured properly to handle deep links
 <Route path="/product/:id" component={ProductDetails} />
@@ -319,28 +335,28 @@ In some cases, you may need to integrate third-party routing solutions into your
 Integrating third-party routing solutions involves incorporating external libraries or APIs that offer routing capabilities into your React application. This may require adapting your application's architecture to work with the chosen routing solution.
 
 **Example:**
+
 ```javascript
 // Integrating with a third-party routing library such as React Router Native for mobile applications
-import { NativeRouter, Route } from 'react-router-native';
+import { NativeRouter, Route } from "react-router-native";
 
 // Define routes using the third-party routing components
 <NativeRouter>
   <Route exact path="/" component={Home} />
   <Route path="/about" component={About} />
-</NativeRouter>
+</NativeRouter>;
 ```
 
 These custom routing implementations provide you with the flexibility to tailor routing functionality to your specific application requirements and architecture. Choose the approach that best suits your project's needs and development workflow.
 
 # Conclusion
+
 React Router simplifies the process of adding routing functionality to your React applications. By defining routes and using components provided by React Router, you can create a seamless navigation experience for your users. Experiment with different route configurations and explore advanced features offered by React Router to enhance your application's navigation capabilities.
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)

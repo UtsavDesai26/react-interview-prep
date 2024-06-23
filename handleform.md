@@ -5,40 +5,49 @@
 Handling user input and form submission is a crucial aspect of building interactive and dynamic web applications with ReactJS. In this comprehensive guide, we will delve into various techniques and best practices for effectively managing form data, validating user input, and handling form submissions.
 
 ## Table of Contents
+
 1. [Controlled Components](#controlled-components)
+
    - [Introduction](#introduction)
    - [Example](#example)
 
 2. [Handling Form Submission](#handling-form-submission)
+
    - [Form Submission Basics](#form-submission-basics)
    - [Preventing Default Behavior](#preventing-default-behavior)
    - [Custom Form Submission Logic](#custom-form-submission-logic)
 
 3. [Form Validation](#form-validation)
+
    - [Introduction](#introduction)
    - [Validation Techniques](#validation-techniques)
    - [Displaying Validation Messages](#displaying-validation-messages)
 
 4. [Using Refs for Form Elements](#using-refs-for-form-elements)
+
    - [Introduction to Refs](#introduction-to-refs)
    - [Referring to Form Elements](#referring-to-form-elements)
 
 5. [Handling Different Form Controls](#handling-different-form-controls)
+
    - [Text Inputs](#text-inputs)
    - [Checkbox and Radio Buttons](#checkbox-and-radio-buttons)
    - [Select Dropdowns](#select-dropdowns)
    - [File Inputs](#file-inputs)
 
 6. [Optimizing Form Performance](#optimizing-form-performance)
+
    - [Debouncing User Input](#debouncing-user-input)
    - [Memoization for Expensive Operations](#memoization-for-expensive-operations)
 
 7. [Form Libraries and Tools](#form-libraries-and-tools)
+
    - [Formik](#formik)
    - [React Hook Form](#react-hook-form)
    - [Yup for Schema Validation](#yup-for-schema-validation)
 
 8. [Real-world Scenarios and Best Practices](#real-world-scenarios-and-best-practices)
+
    - [Handling Multi-step Forms](#handling-multi-step-forms)
    - [Securing Form Submissions](#securing-form-submissions)
    - [Integrating with Backend APIs](#integrating-with-backend-apis)
@@ -56,22 +65,16 @@ In React, a controlled component is a form element whose value is controlled by 
 ### Example
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function ControlledInput() {
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState("");
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
-  return (
-    <input
-      type="text"
-      value={inputValue}
-      onChange={handleInputChange}
-    />
-  );
+  return <input type="text" value={inputValue} onChange={handleInputChange} />;
 }
 ```
 
@@ -118,7 +121,9 @@ Informing users about validation errors is essential for a positive user experie
 Example:
 
 ```jsx
-{hasError && <span className="error-message">Invalid input</span>}
+{
+  hasError && <span className="error-message">Invalid input</span>;
+}
 ```
 
 ## 4. Using Refs for Form Elements
@@ -218,7 +223,7 @@ Yup is a schema validation library that seamlessly integrates with form librarie
 
 For multi-step forms, consider breaking down the form into manageable sections and validating each step before proceeding
 
- to the next.
+to the next.
 
 ### Securing Form Submissions
 
@@ -233,14 +238,13 @@ Integrate form submissions with backend APIs securely, using techniques like HTT
 In conclusion, mastering the art of handling user input and form submission in ReactJS is essential for creating responsive and user-friendly web applications. By understanding controlled components, implementing form validation, utilizing refs, and optimizing performance, developers can build efficient and secure forms. Leveraging powerful libraries like Formik and React Hook Form, along with schema validation tools like Yup, enhances the development process. Real-world considerations, such as multi-step forms and backend integration, round out this comprehensive guide, providing developers with the skills needed to excel in ReactJS form development.
 
 ## 10. Additional (Next Step)
+
 In the next step, we will delve deeper into advanced form management techniques and explore specialized libraries and tools designed to streamline the form development process.
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)

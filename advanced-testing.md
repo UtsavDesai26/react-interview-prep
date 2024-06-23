@@ -22,9 +22,9 @@ module.exports = sum;
 
 ```javascript
 // sum.test.js
-const sum = require('./sum');
+const sum = require("./sum");
 
-test('adds 1 + 2 to equal 3', () => {
+test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
 });
 ```
@@ -39,7 +39,7 @@ test('adds 1 + 2 to equal 3', () => {
 
 ```javascript
 // MyComponent.js
-import React from 'react';
+import React from "react";
 
 const MyComponent = ({ text }) => {
   return <div>{text}</div>;
@@ -50,11 +50,11 @@ export default MyComponent;
 
 ```javascript
 // MyComponent.test.js
-import React from 'react';
-import { render } from '@testing-library/react';
-import MyComponent from './MyComponent';
+import React from "react";
+import { render } from "@testing-library/react";
+import MyComponent from "./MyComponent";
 
-test('renders component with correct text', () => {
+test("renders component with correct text", () => {
   const { getByText } = render(<MyComponent text="Hello, World!" />);
   const textElement = getByText(/Hello, World!/i);
   expect(textElement).toBeInTheDocument();
@@ -71,7 +71,7 @@ test('renders component with correct text', () => {
 
 ```javascript
 // Button.js
-import React from 'react';
+import React from "react";
 
 const Button = ({ onClick, label }) => {
   return <button onClick={onClick}>{label}</button>;
@@ -82,14 +82,14 @@ export default Button;
 
 ```javascript
 // Button.test.js
-import React from 'react';
-import { shallow } from 'enzyme';
-import Button from './Button';
+import React from "react";
+import { shallow } from "enzyme";
+import Button from "./Button";
 
-test('calls onClick handler when button is clicked', () => {
+test("calls onClick handler when button is clicked", () => {
   const onClickMock = jest.fn();
   const wrapper = shallow(<Button onClick={onClickMock} label="Click me" />);
-  wrapper.find('button').simulate('click');
+  wrapper.find("button").simulate("click");
   expect(onClickMock).toHaveBeenCalled();
 });
 ```
@@ -104,10 +104,10 @@ test('calls onClick handler when button is clicked', () => {
 
 ```javascript
 // cypress/integration/button_spec.js
-describe('Button', () => {
-  it('clicks the button', () => {
-    cy.visit('/');
-    cy.contains('button', 'Click me').click();
+describe("Button", () => {
+  it("clicks the button", () => {
+    cy.visit("/");
+    cy.contains("button", "Click me").click();
   });
 });
 ```
@@ -130,11 +130,11 @@ module.exports = sum;
 
 ```javascript
 // sum.test.js
-const assert = require('assert');
-const sum = require('./sum');
+const assert = require("assert");
+const sum = require("./sum");
 
-describe('sum function', () => {
-  it('adds two numbers correctly', () => {
+describe("sum function", () => {
+  it("adds two numbers correctly", () => {
     assert.strictEqual(sum(1, 2), 3);
   });
 });
@@ -150,23 +150,20 @@ describe('sum function', () => {
 
 ```javascript
 // karma.conf.js
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
-    frameworks: ['jasmine'],
-    files: [
-      'sum.js',
-      'sum.test.js'
-    ],
-    reporters: ['progress'],
-    browsers: ['Chrome']
+    frameworks: ["jasmine"],
+    files: ["sum.js", "sum.test.js"],
+    reporters: ["progress"],
+    browsers: ["Chrome"],
   });
 };
 ```
 
 ```javascript
 // sum.test.js
-describe('sum function', () => {
-  it('adds two numbers correctly', () => {
+describe("sum function", () => {
+  it("adds two numbers correctly", () => {
     expect(sum(1, 2)).toBe(3);
   });
 });
@@ -176,12 +173,10 @@ describe('sum function', () => {
 
 Exploring and mastering various testing libraries and tools in the React ecosystem empowers you to develop robust, reliable, and maintainable applications. Whether you prefer the simplicity of Jest, the user-centric approach of React Testing Library, the flexibility of Enzyme, the end-to-end testing capabilities of Cypress, the versatility of Mocha, or the cross-browser testing capabilities of Karma, each tool brings unique strengths to the table. By leveraging the right tools for your testing needs, you can ensure the quality and stability of your React applications across the board.
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)

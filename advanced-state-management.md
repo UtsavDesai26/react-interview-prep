@@ -19,18 +19,18 @@ Redux Toolkit simplifies Redux workflow by providing utilities to reduce boilerp
 
 ```javascript
 // counterSlice.js
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
 const counterSlice = createSlice({
-  name: 'counter',
+  name: "counter",
   initialState: {
     value: 0,
   },
   reducers: {
-    increment: state => {
+    increment: (state) => {
       state.value += 1;
     },
-    decrement: state => {
+    decrement: (state) => {
       state.value -= 1;
     },
   },
@@ -42,8 +42,8 @@ export default counterSlice.reducer;
 
 ```javascript
 // store.js
-import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from './counterSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import counterReducer from "./counterSlice";
 
 const store = configureStore({
   reducer: {
@@ -69,12 +69,12 @@ Zustand is a minimalistic state management library for React applications. It of
 
 ```javascript
 // store.js
-import create from 'zustand';
+import create from "zustand";
 
-const useStore = create(set => ({
+const useStore = create((set) => ({
   count: 0,
-  increment: () => set(state => ({ count: state.count + 1 })),
-  decrement: () => set(state => ({ count: state.count - 1 })),
+  increment: () => set((state) => ({ count: state.count + 1 })),
+  decrement: () => set((state) => ({ count: state.count - 1 })),
 }));
 
 export default useStore;
@@ -82,8 +82,8 @@ export default useStore;
 
 ```javascript
 // CounterComponent.js
-import React from 'react';
-import useStore from './store';
+import React from "react";
+import useStore from "./store";
 
 const CounterComponent = () => {
   const { count, increment, decrement } = useStore();
@@ -115,7 +115,7 @@ MobX is a simple and scalable state management library that makes state manageme
 
 ```javascript
 // store.js
-import { makeAutoObservable } from 'mobx';
+import { makeAutoObservable } from "mobx";
 
 class CounterStore {
   count = 0;
@@ -139,9 +139,9 @@ export default counterStore;
 
 ```javascript
 // CounterComponent.js
-import React from 'react';
-import { observer } from 'mobx-react-lite';
-import counterStore from './store';
+import React from "react";
+import { observer } from "mobx-react-lite";
+import counterStore from "./store";
 
 const CounterComponent = observer(() => {
   const { count, increment, decrement } = counterStore;
@@ -173,19 +173,19 @@ Recoil is an experimental state management library for managing shared state in 
 
 ```javascript
 // atom.js
-import { atom } from 'recoil';
+import { atom } from "recoil";
 
 export const counterState = atom({
-  key: 'counterState',
+  key: "counterState",
   default: 0,
 });
 ```
 
 ```javascript
 // Counter.js
-import React from 'react';
-import { useRecoilState } from 'recoil';
-import { counterState } from './atom';
+import React from "react";
+import { useRecoilState } from "recoil";
+import { counterState } from "./atom";
 
 const Counter = () => {
   const [count, setCount] = useRecoilState(counterState);
@@ -207,12 +207,10 @@ export default Counter;
 
 These examples demonstrate how to implement and use each of the advanced state management solutions in React applications. Choose the one that best fits your project requirements and development preferences.
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)

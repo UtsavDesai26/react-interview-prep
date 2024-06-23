@@ -9,7 +9,7 @@ The `useState` hook is fundamental for adding state to functional components. It
 ### Example:
 
 ```jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Counter() {
   const [count, setCount] = useState(0);
@@ -30,7 +30,7 @@ function Counter() {
 ### Example:
 
 ```jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function Example() {
   const [count, setCount] = useState(0);
@@ -55,8 +55,8 @@ function Example() {
 ### Example:
 
 ```jsx
-import React, { useContext } from 'react';
-import ThemeContext from './ThemeContext';
+import React, { useContext } from "react";
+import ThemeContext from "./ThemeContext";
 
 function ThemedButton() {
   const theme = useContext(ThemeContext);
@@ -76,15 +76,15 @@ function ThemedButton() {
 ### Example:
 
 ```jsx
-import React, { useReducer } from 'react';
+import React, { useReducer } from "react";
 
 const initialState = { count: 0 };
 
 function reducer(state, action) {
   switch (action.type) {
-    case 'increment':
+    case "increment":
       return { count: state.count + 1 };
-    case 'decrement':
+    case "decrement":
       return { count: state.count - 1 };
     default:
       throw new Error();
@@ -97,8 +97,8 @@ function Counter() {
   return (
     <div>
       Count: {state.count}
-      <button onClick={() => dispatch({ type: 'increment' })}>+</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>-</button>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
     </div>
   );
 }
@@ -111,7 +111,7 @@ function Counter() {
 ### Example:
 
 ```jsx
-import React, { useState, useCallback, useMemo } from 'react';
+import React, { useState, useCallback, useMemo } from "react";
 
 function MyComponent({ data }) {
   const [count, setCount] = useState(0);
@@ -141,7 +141,7 @@ function MyComponent({ data }) {
 ### Example:
 
 ```jsx
-import React, { useRef } from 'react';
+import React, { useRef } from "react";
 
 function TextInputWithFocusButton() {
   const inputEl = useRef(null);
@@ -202,12 +202,10 @@ These additional hooks expand the capabilities of React and offer solutions to c
 
 Mastering React Hooks provides a robust foundation for building scalable and maintainable React applications. By understanding and leveraging the power of each hook, developers can create efficient and expressive functional components. Experiment with these hooks in your projects and tailor them to your specific needs to unlock the full potential of React development.
 
-----
+---
 
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
-[![Hackerrank Badge](https://img.shields.io/badge/-Hackerrank-2EC866?style=flat-square&logo=HackerRank&logoColor=white&link=https://www.hackerrank.com/profile/UtsavDesai26)](https://www.hackerrank.com/profile/UtsavDesai26)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
-[![Leetcode Badge](https://img.shields.io/badge/-Leetcode-FFA116?style=flat-square&logo=leetcode&logoColor=white&link=https://leetcode.com/desaiutsav26/)](https://leetcode.com/desaiutsav26/)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)
