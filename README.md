@@ -64,6 +64,6 @@ Let's stay connected and keep the conversation going! You can follow me on:
 
 ---
 
-<a href="setup.md">
-    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" width="120" height="40">
+<a href="setup.html">
+    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="30" width="200" object-fit="cover">
 </a>
