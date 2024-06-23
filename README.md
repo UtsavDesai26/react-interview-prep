@@ -62,6 +62,8 @@ Let's stay connected and keep the conversation going! You can follow me on:
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)
 
+---
+
 <a href="setup.html">
-    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="40" width="100" object-fit="cover">
+    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="40" width="100" object-fit="cover" />
 </a>
