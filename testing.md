@@ -109,6 +109,18 @@ Testing ReactJS components using Jest and Enzyme is essential for maintaining co
 
 ---
 
+## Stay Connected and Contribute!
+
+If you found this guide helpful, consider giving it a star on [GitHub](https://github.com/UtsavDesai26/react-interview-prep). Your support helps me to keep this project alive and constantly improving.
+
+[![GitHub stars](https://img.shields.io/github/stars/UtsavDesai26/react-interview-prep?style=social)](https://github.com/UtsavDesai26/react-interview-prep)
+[![GitHub forks](https://img.shields.io/github/forks/UtsavDesai26/react-interview-prep?style=social)](https://github.com/UtsavDesai26/react-interview-prep/fork)
+[![GitHub issues](https://img.shields.io/github/issues/UtsavDesai26/react-interview-prep)](https://github.com/UtsavDesai26/react-interview-prep/issues)
+
+## Connect with Me
+
+Let's stay connected and keep the conversation going! You can follow me on:
+
 [![Github Badge](http://img.shields.io/badge/-Github-black?style=flat-square&logo=github&link=https://github.com/UtsavSoftrefineTech)](https://github.com/UtsavSoftrefineTech)
 [![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/utsavdesai26/)](https://www.linkedin.com/in/utsavdesai26/)
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
