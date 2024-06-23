@@ -113,10 +113,12 @@ Let's stay connected and keep the conversation going! You can follow me on:
 
 ---
 
+<div display="flex" justify-content="space-between" margin="20px 0">
 <a href="README.md">
-    <img src="https://img.shields.io/badge/-Previous-lightblack?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="40" width="120" object-fit="cover" />
+    <img src="https://img.shields.io/badge/-Previous-lightblack?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="30" width="100" object-fit="cover" />
 </a>
 
 <a href="introduction.md">
-    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="40" width="100" object-fit="cover" />
+    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="30" width="80" object-fit="cover" />
 </a>
+</div>
