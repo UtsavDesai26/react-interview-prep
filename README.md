@@ -61,11 +61,3 @@ Let's stay connected and keep the conversation going! You can follow me on:
 [![Stackoverflow Badge](https://img.shields.io/badge/-Stack%20overflow-FE7A16?style=flat-square&logo=stack-overflow&logoColor=white&link=https://stackoverflow.com/users/22878781/utsav-desai)](https://stackoverflow.com/users/22878781/utsav-desai)
 [![Gmail Badge](https://img.shields.io/badge/-Gmail-d14836?style=flat-square&logo=Gmail&logoColor=white&link=mailto:desaiutsav26@gmail.com)](mailto:desaiutsav26@gmail.com)
 [![Medium Badge](https://img.shields.io/badge/-Medium-black?style=flat-square&logo=medium&link=https://medium.com/@utsavdesai26)](https://medium.com/@utsavdesai26)
-
----
-
-<div display="flex" justify-content="end" margin="20px 0">
-<a href="setup.html">
-    <img src="https://img.shields.io/badge/-Next-black?style=flat-circle&logo=left&logoColor=white" alt="UtsavDesai26" height="30" width="80" object-fit="cover" />
-</a>
-</div>
